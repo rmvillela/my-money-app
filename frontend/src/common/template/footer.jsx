@@ -3,8 +3,8 @@ import React from 'react'
 export default props => (
     <footer className="main-footer">
         <strong>
-            Copy &copy; 2017
-            <a href="http://cod3r.com.br" target="_blank"> Cod3r</a>.
+            &copy; 2018
+            <a href="http://github.com/rmvillela" target="_blank"> Roosevelt M. Villela</a>.
         </strong>
     </footer>
 )
