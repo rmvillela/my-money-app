@@ -35,13 +35,15 @@ module.exports = {
             query: {
                 presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
+            }}, 
+            {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            }, 
+            {
+                test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
+                loader: 'file'
             }
-        }, {
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-        }, {
-            test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
-            loader: 'file'
-        }]
+        ]
     }
 }
